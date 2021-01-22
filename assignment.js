@@ -12,7 +12,12 @@ function kilometerToMeter(kilo){
     else if (kilo < 0) {
         return "This is an invalid output";
     }
-    
+    else if (kilo == 0) {
+        return "DIM DISE, DIM?";
+    }
+    else{
+        return "Something is wrong"
+    }
 }
 
 var convertedResult = kilometerToMeter(100);
@@ -27,11 +32,17 @@ function budgetCalculator(watch, phone, laptop){
     laptopPrice = laptop * 500; // Counts total price of all laptops
     totalPrice = watchPrice + phonePrice + laptopPrice; // Combines all the price and gives total budget
 
-    if (watch >= 0 && phone >= 0 && laptop >= 0) {
+    if (watch > 0 && phone > 0 && laptop > 0) {
         return totalPrice;
     }
     else if (watch < 0 || phone < 0 || laptop < 0) {
         return "Some values are invalid";
+    }
+    else if (watch == 0 && phone == 0 && laptop == 0) {
+        return "DIM DISE, DIM?";
+    }
+    else{
+        return "Something is wrong"
     }
 }
 
@@ -61,8 +72,11 @@ function hotelCost(days){
         totalRent = rent10Days + rent20Days + rentLastDays; // Defines total rent for all days
         return totalRent;
     }
-    else if (days < 0) {
-        return "Please insert a posative value";
+    else if (days == 0) {
+        return "DIM DISE, DIM?";
+    }
+    else{
+        return "Something is wrong"
     }
 }
 
