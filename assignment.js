@@ -83,6 +83,7 @@ function hotelCost(days){
 var fullHotelCost = hotelCost(20);
 console.log(fullHotelCost);
 
+
 // Fourth Problem: Finding the largets Name
 
 function megaFriend(friendsName){
