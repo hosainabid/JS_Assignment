@@ -1,3 +1,6 @@
+// https://github.com/hosainabid/JS_Assignment
+
+
 // First Problem: Kilometer To Meter Conversion
 
 function kilometerToMeter(kilo){
@@ -63,7 +66,7 @@ function hotelCost(days){
     }
 }
 
-var fullHotelCost = hotelCost(1);
+var fullHotelCost = hotelCost(20);
 console.log(fullHotelCost);
 
 // Fourth Problem: Finding the largets Name
